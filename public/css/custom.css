@@ -1,0 +1,15 @@
+body {
+	background-color: #90A4AE;
+}
+
+#add_address_form_container {
+	margin: 5px auto;
+	padding: 30px;
+	height: 100%;
+	width: 600px;
+	background-color: #ECEFF1;
+}
+
+#form_row {
+	margin-top: 20px;
+}
