@@ -2,6 +2,16 @@ body {
 	background-color: #90A4AE;
 }
 
+.card {
+	width: 480px;
+	float: left;
+}
+
+#main_container {
+	background-color: white;
+	width: 960px;
+	height: 100%;
+
 #add_address_form_container {
 	margin: 5px auto;
 	padding: 30px;
