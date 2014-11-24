@@ -13,7 +13,7 @@
 	<div class="row" id="header">
 		<div class="container">
 			<h1>Address Book Application</h1>
-			<p><a href="#addperson">Add Person</a></p>
+			<p><a href="add_address.php">Add Person</a></p>
 		</div> <!-- header row container -->
 	</div> <!-- header row div -->
 
@@ -55,8 +55,6 @@
 			</div> <!-- second row cards div -->
 		</div> <!-- main container div -->
 	</div> <!-- main row div -->
-		
-	
 <!-- footer row here -->
 
 	<div class="row " id="footer">
