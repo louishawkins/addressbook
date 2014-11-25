@@ -2,15 +2,31 @@ body {
 	background-color: #90A4AE;
 }
 
+#header-container {
+	width: 750px;
+	height: 75px;
+	padding: 10px;
+}
+
+#add_person_link {
+	float: right;
+	font-size: 2em;
+}
+
 .card {
-	width: 480px;
+	width: 350px;
 	float: left;
+	padding: 20px;
+	margin: 5px;
+	background-color: #ECEFF1;
 }
 
 #main_container {
 	background-color: white;
-	width: 960px;
+	width: 750px;
 	height: 100%;
+	padding-top: 10px;
+}
 
 #add_address_form_container {
 	margin: 5px auto;
@@ -22,4 +38,11 @@ body {
 
 #form_row {
 	margin-top: 20px;
+}
+
+#pencil-edit {
+	position: relative;
+	top: -110px;
+	left: 305px;
+
 }
