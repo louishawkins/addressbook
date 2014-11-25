@@ -18,37 +18,37 @@
               <div class="form-group">
                 <label for="name" class="col-sm-2 control-label">Name</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="editName-value">
+                  <input type="text" class="form-control" id="editName-value" name="editName">
                 </div>
               </div>
               <div class="form-group">
                 <label for="editPhone" class="col-sm-2 control-label">Phone #</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="editPhone" value="(210) 555-6793">
+                  <input type="text" class="form-control" id="editPhone" name="editPhone">
                 </div>
               </div>
               <div class="form-group">
                 <label for="street" class="col-sm-2 control-label">Street</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="editStreet" value="123 Fake Street">
+                  <input type="text" class="form-control" id="editStreet" name="editStreet">
                 </div>
               </div>
                <div class="form-group">
                 <label for="city" class="col-sm-2 control-label">City</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="editCity" value="Fake City">
+                  <input type="text" class="form-control" id="editCity" name="editCity">
                 </div>
               </div>
               <div class="form-group">
                 <label for="state" class="col-sm-2 control-label">State</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="editState" value="Texas">
+                  <input type="text" class="form-control" id="editState" name="editState">
                 </div>
               </div>
               <div class="form-group">
                 <label for="zip" class="col-sm-2 control-label">Zip Code</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="editZip" value="78223">
+                  <input type="text" class="form-control" id="editZip" name="editZip">
                 </div>
               </div>
       </div> <!-- modal body -->

@@ -42,6 +42,6 @@ include 'edit_contact_modal.php'; //edit contact modal
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/edit-address-modal-binding.js"></script>
+	<script type="text/javascript" src="js/edit-contact-modal-binding.js"></script>
 </body>
 </html>

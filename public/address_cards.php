@@ -11,9 +11,10 @@
 		<div class="col-md-6 col-md-offset-3">
 			<h3 id="person-name-<?= $row['p_id'] ?>"><?= $row['first_name'] ?> <?= $row['last_name'] ?></h3>
 			<div id="person-ph_num-<?= $row['p_id'] ?>"><?= $row['ph_num'] ?></div>
-			<div><?= $row['street']?></div>
-			<div><?= $row['city']?>, <?= $row['state'] ?></div>
-			<div><?= $row['zip'] ?></div>
+			<div id="person-street-<?= $row['p_id'] ?>"><?= $row['street']?></div>
+			<div id="person-city-<?= $row['p_id'] ?>"><?= $row['city']?></div>
+			<div id="person-state-<?= $row['p_id'] ?>"><?= $row['state']?></div>
+			<div id="person-zip-<?= $row['p_id'] ?>"><?= $row['zip']?></div>
 		</div>
 	</div> <!-- cardrow -->
 </div> <!-- container card -->

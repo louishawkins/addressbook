@@ -2,7 +2,7 @@ $('.edit-person-btn').click(function() {
 	var personId = $(this).data('edit-address');
 	var personName = $("#person-name-" + personId).text();
 	var image = $("#person-image-" + personId).text();
-	var phone = $("#person-phone-" + personId).text();
+	var phone = $("#person-ph_num-" + personId).text();
 	var street = $("#person-street-" + personId).text();
 	var city = $("#person-city-" + personId).text();
 	var state = $("#person-state-" + personId).text();
