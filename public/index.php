@@ -1,4 +1,5 @@
 <?php 
+include 'includes/model.class.php'; //model
 include 'add_address.php'; //add address modal
 include 'edit_address.php'; //edit address modal
 include 'edit_person.php'; //edit person modal
@@ -26,7 +27,7 @@ include 'edit_person.php'; //edit person modal
 
 	<div class="row" id="mainrow">
 		<div class="container" id="main_container">
-			<?php include 'sample_cards.php'; ?>
+			<?php include_once 'sample_cards_from_db.php'; ?>
 		</div> <!-- main container div -->
 	</div> <!-- main row div -->
 
