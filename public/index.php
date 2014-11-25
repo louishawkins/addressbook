@@ -1,6 +1,7 @@
 <?php 
 include 'add_address.php'; //add address modal
 include 'edit_address.php'; //edit address modal
+include 'edit_person.php'; //edit person modal
 ?>
 
 <!DOCTYPE html>

@@ -30,6 +30,7 @@
 					<div class="col-md-2">
 						<img src="img/me.jpg" height="100px" width="100px" class="img-circle">
 						<a id="pencil-edit" href="#" data-toggle="modal" data-target="#editAddressModal"><span class="glyphicon glyphicon-pencil"></span></a>
+						<a href="#" data-toggle="modal" data-target="#editPersonModal">Edit Person</a>
 					</div>
 					<div class="col-md-6 col-md-offset-3">
 						<h3>Tor Coolguy</h3>
