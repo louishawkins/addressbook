@@ -1,8 +1,7 @@
 <?php 
-include 'includes/model.class.php'; //model
-include 'add_address.php'; //add address modal
-include 'edit_address.php'; //edit address modal
-include 'edit_person.php'; //edit person modal
+require 'includes/model.class.php'; //model
+include 'add_address_modal.php'; //add address modal
+include 'edit_contact_modal.php'; //edit contact modal
 ?>
 
 <!DOCTYPE html>
@@ -19,15 +18,15 @@ include 'edit_person.php'; //edit person modal
 	<div class="row" id="header">
 		<div class="container" id="header-container">
 			<h1>Address Book Application</h1>
-			<p id="add_person_link"><a href="#" data-toggle="modal" data-target="#addContactModal"><span class="glyphicon glyphicon-plus"></span>Add Person</a></p>
+			<p id="add_person_link"><a href="#" data-toggle="modal" data-target="#addContactModal"><span class="glyphicon glyphicon-plus"></span>Add Contact</a></p>
 		</div> <!-- header row container -->
 	</div> <!-- header row div -->
 
 <!-- main row here -->
 
 	<div class="row" id="mainrow">
-		<div class="container" id="main_container">
-			<?php include_once 'sample_cards_from_db.php'; ?>
+		<div class="container main_container">
+			<?php include_once 'address_cards.php'; ?>
 		</div> <!-- main container div -->
 	</div> <!-- main row div -->
 
@@ -40,7 +39,9 @@ include 'edit_person.php'; //edit person modal
 	</div>
 
 </div> <!-- body container -->
+
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/edit-address-modal-binding.js"></script>
 </body>
 </html>

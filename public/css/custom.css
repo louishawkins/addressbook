@@ -21,7 +21,7 @@ body {
 	background-color: #ECEFF1;
 }
 
-#main_container {
+.main_container {
 	background-color: white;
 	width: 750px;
 	height: 100%;
