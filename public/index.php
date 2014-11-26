@@ -45,22 +45,21 @@ include 'edit_contact_modal.php'; //edit contact modal
 	<script type="text/javascript" src="js/edit-contact-modal-binding.js"></script>
 	<script type="text/javascript">
 		$('#remove-person').click(function() {
-		  var removeId = $(this).attr("value");
-		  console.log(removeId);
-		  //Send the AJAX call to the server
-		  $.ajax({
-		  //The URL to process the request
-		    'url' : '/index.php',
-		  //The type of request, also known as the "method" in HTML forms
-		  //Can be 'GET' or 'POST'
-		    'type' : 'GET',
-		  //Any post-data/get-data parameters
-		  //This is optional
-		    'data' : {
-		      'paramater1' : 'value',
-		      'parameter2' : 'another value'
-		    },
-		  });
+
+			$(".confirm").confirm({
+			    text: "Are you sure you want to delete this person?",
+			    title: "Confirmation required",
+			    confirm: function(button) {
+			        var removeId = $(this).attr("value");
+		  			console.log(removeId);
+			    },
+			    cancel: function(button) {
+			        // do something
+			    },
+			    confirmButton: "Yes I am",
+			    cancelButton: "No",
+			    post: true
+			});
 		});		
 	</script>
 </body>
