@@ -1,9 +1,9 @@
 <!-- begin edit address modal -->
-<div class="modal fade" id="editAddressModal" tabindex="-1" role="dialog" aria-labelledby="editAddressModal" aria-hidden="true">
+<div class="modal fade" id="editContactModal" tabindex="-1" role="dialog" aria-labelledby="editAddressModal" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <!--<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>-->
         <h4 class="modal-title" id="editName"></h4>
       </div> <!-- modal header -->
         <!-- MODAL BODY WITH FORM -->
@@ -53,11 +53,14 @@
               </div>
       </div> <!-- modal body -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger">Remove Person</button>
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
         <button type="submit" class="btn btn-success">Save</button>
-      </div> <!-- modal-footer -->
         </form>
+        <form method="GET" action="/index.php">
+          <button id="remove-person" name="removeId" type="submit" class="btn btn-danger remove-person-btn">Remove Person</button>
+        </form>
+      </div> <!-- modal-footer -->
+
     </div> <!-- modal-content -->
   </div> <!-- modal-dialogue -->
 </div> <!-- master modal-div -->

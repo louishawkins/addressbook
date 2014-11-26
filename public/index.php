@@ -30,18 +30,38 @@ include 'edit_contact_modal.php'; //edit contact modal
 		</div> <!-- main container div -->
 	</div> <!-- main row div -->
 
-<!-- footer row here -->
+<!-- footer row here
 
 	<div class="row " id="footer">
 		<div class="container">
 			<h3>Footer content goes here</h3>
 		</div>
 	</div>
-
+-->
 </div> <!-- body container -->
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/edit-contact-modal-binding.js"></script>
+	<script type="text/javascript">
+		$('#remove-person').click(function() {
+		  var removeId = $(this).attr("value");
+		  console.log(removeId);
+		  //Send the AJAX call to the server
+		  $.ajax({
+		  //The URL to process the request
+		    'url' : '/index.php',
+		  //The type of request, also known as the "method" in HTML forms
+		  //Can be 'GET' or 'POST'
+		    'type' : 'GET',
+		  //Any post-data/get-data parameters
+		  //This is optional
+		    'data' : {
+		      'paramater1' : 'value',
+		      'parameter2' : 'another value'
+		    },
+		  });
+		});		
+	</script>
 </body>
 </html>

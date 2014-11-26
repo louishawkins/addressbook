@@ -16,6 +16,7 @@ body {
 .card {
 	width: 350px;
 	float: left;
+	height: 200px;
 	padding: 20px;
 	margin: 5px;
 	background-color: #ECEFF1;
@@ -24,7 +25,6 @@ body {
 .main_container {
 	background-color: white;
 	width: 750px;
-	height: 100%;
 	padding-top: 10px;
 }
 
@@ -40,9 +40,19 @@ body {
 	margin-top: 20px;
 }
 
-#pencil-edit {
+a.edit-person-btn:link {
 	position: relative;
 	top: -110px;
 	left: 305px;
+	color:#CFD8DC;
 
 }
+
+a.edit-person-btn:hover {
+	color: #29B6F6;
+}
+
+
+
+
+

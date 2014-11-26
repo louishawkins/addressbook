@@ -1,5 +1,6 @@
 $('.edit-person-btn').click(function() {
-	var personId = $(this).data('edit-address');
+	var personId = $(this).data('edit-person');
+	var addressId = $(this).data('edit-address');
 	var personName = $("#person-name-" + personId).text();
 	var image = $("#person-image-" + personId).text();
 	var phone = $("#person-ph_num-" + personId).text();
@@ -16,5 +17,6 @@ $('.edit-person-btn').click(function() {
 	$("#editCity").val(city);
 	$("#editState").val(state);
 	$("#editZip").val(zip);
-	$("#editAddressModal").modal();
+	$("#remove-person").val([personId, addressId]);
+	$("#editContactModal").modal();
 });
