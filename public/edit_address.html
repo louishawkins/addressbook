@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title>Edit {name}</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+
+<div class="container main_container">
+	<div class="row">
+		<div class="col-md-2">
+			<img src="img/#image">
+		</div>
+		<div class="col-md-6">
+			<h3 id="edit-person-name"></h3>
+		</div>
+	</div> <!--image/name row-->
+	<div class="row">
+		<div class="col-md-8">
+        <form class="form-horizontal" role="form" method="POST" action="/index.php" id="add_address_form">
+              <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="editName">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="editPhone" class="col-sm-2 control-label">Phone #</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="editPhone" value="(210) 555-6793">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="street" class="col-sm-2 control-label">Street</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="editStreet" value="123 Fake Street">
+                </div>
+              </div>
+               <div class="form-group">
+                <label for="city" class="col-sm-2 control-label">City</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="editCity" value="Fake City">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="state" class="col-sm-2 control-label">State</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="editState" value="Texas">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="zip" class="col-sm-2 control-label">Zip Code</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="editZip" value="78223">
+                </div>
+              </div>
+
+        </form>
+    </div>
+</div>
+</div> <!--container -->
+</body>
+</html>

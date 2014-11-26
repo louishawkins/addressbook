@@ -2,15 +2,31 @@ body {
 	background-color: #90A4AE;
 }
 
-.card {
-	width: 480px;
-	float: left;
+#header-container {
+	width: 750px;
+	height: 75px;
+	padding: 10px;
 }
 
-#main_container {
+#add_person_link {
+	float: right;
+	font-size: 2em;
+}
+
+.card {
+	width: 350px;
+	float: left;
+	height: 200px;
+	padding: 20px;
+	margin: 5px;
+	background-color: #ECEFF1;
+}
+
+.main_container {
 	background-color: white;
-	width: 960px;
-	height: 100%;
+	width: 750px;
+	padding-top: 10px;
+}
 
 #add_address_form_container {
 	margin: 5px auto;
@@ -23,3 +39,24 @@ body {
 #form_row {
 	margin-top: 20px;
 }
+
+a.edit-person-btn:link {
+	position: relative;
+	top: -110px;
+	left: 305px;
+	color:#CFD8DC;
+
+}
+
+a.edit-person-btn:hover {
+	color: #29B6F6;
+}
+
+#remove-form {
+	float:left;
+}
+
+
+
+
+

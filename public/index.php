@@ -1,4 +1,9 @@
-<?php // include stuff ?>
+<?php 
+require 'includes/model.class.php'; //model
+include 'add_address_modal.php'; //add address modal
+include 'edit_contact_modal.php'; //edit contact modal
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,60 +16,51 @@
 <!-- header -->
 
 	<div class="row" id="header">
-		<div class="container">
+		<div class="container" id="header-container">
 			<h1>Address Book Application</h1>
-			<p><a href="add_address.php">Add Person</a></p>
+			<p id="add_person_link"><a href="#" data-toggle="modal" data-target="#addContactModal"><span class="glyphicon glyphicon-plus"></span>Add Contact</a></p>
 		</div> <!-- header row container -->
 	</div> <!-- header row div -->
 
 <!-- main row here -->
 
 	<div class="row" id="mainrow">
-		<div class="container" id="main_container">
-			<div class="row" id="first_row_cards">
-			<div class="card" id="card1">
-				<h2>Tor Coolguy</h2>
-				<img src="img/me.jpg" height="40px" width="40px">
-				<p>123 Fake St.</p>
-				<p>Tuscon, AR 34345</p>
-				<p><a href="#editperson">Edit Person</a></p>
-			</div>
-			<div class="card" id="card2">
-				<h2>Tor Coolguy</h2>
-				<img src="img/me.jpg" height="40px" width="40px">
-				<p>123 Fake St.</p>
-				<p>Tuscon, AR 34345</p>
-				<p><a href="#editperson">Edit Person</a></p>
-			</div>
-			</div> <!-- first row cards div -->
-			<div class="row" id="second_row_cards">
-				<div class="card" id="card3">
-					<h2>Tor Coolguy</h2>
-					<img src="img/me.jpg" height="40px" width="40px">
-					<p>123 Fake St.</p>
-					<p>Tuscon, AR 34345</p>
-					<p><a href="#editperson">Edit Person</a></p>
-				</div>
-				<div class="card" id="card4">
-					<h2>Tor Coolguy</h2>
-					<img src="img/me.jpg" height="40px" width="40px">
-					<p>123 Fake St.</p>
-					<p>Tuscon, AR 34345</p>
-					<p><a href="#editperson">Edit Person</a></p>
-				</div>
-			</div> <!-- second row cards div -->
+		<div class="container main_container">
+			<?php include_once 'address_cards.php'; ?>
 		</div> <!-- main container div -->
 	</div> <!-- main row div -->
-<!-- footer row here -->
+
+<!-- footer row here
 
 	<div class="row " id="footer">
 		<div class="container">
 			<h3>Footer content goes here</h3>
 		</div>
 	</div>
-
+-->
 </div> <!-- body container -->
+
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/edit-contact-modal-binding.js"></script>
+	<script type="text/javascript">
+		$('#remove-person').click(function() {
+
+			$(".confirm").confirm({
+			    text: "Are you sure you want to delete this person?",
+			    title: "Confirmation required",
+			    confirm: function(button) {
+			        var removeId = $(this).attr("value");
+		  			console.log(removeId);
+			    },
+			    cancel: function(button) {
+			        // do something
+			    },
+			    confirmButton: "Yes I am",
+			    cancelButton: "No",
+			    post: true
+			});
+		});		
+	</script>
 </body>
 </html>
