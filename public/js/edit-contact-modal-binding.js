@@ -17,8 +17,17 @@ $('.edit-person-btn').click(function() {
 	$("#editCity").val(city);
 	$("#editState").val(state);
 	$("#editZip").val(zip);
-	$("#update-person").val([personId, addressId]);
-	$("#remove-person").val([personId, addressId]);
+	$("#update-person-id").val(personId);
+	$("#update-address-id").val(addressId);
+	$("#remove-person-id").val(personId);
+	$("#remove-address-id").val(addressId);
 	$("#submit-img").val(personId);
 	$("#editContactModal").modal();
+});
+
+$("#remove-form").submit(function(e) {
+	if(!confirm('Are you sure you want to delete this contact?')) {
+		e.preventDefault();
+	}
+	return true;
 });

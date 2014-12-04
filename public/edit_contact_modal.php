@@ -61,10 +61,14 @@
       </div> <!-- modal body -->
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <input type="hidden" name="person_id" id="update-person-id">
+        <input type="hidden" name="address_id" id="update-address-id">
         <button type="submit" id="update-person" name="update-person-id" class="btn btn-success">Save</button>
         </form>
-        <form id="remove-form" name="remove-form" method="GET" action="" onsubmit="return confirm('Are you sure you want to delete this contact?');">
+        <form id="remove-form" name="remove-form" method="POST" action="index.php">
           <input type="hidden" name="act" value="run">
+          <input type="hidden" name="person_id" id="remove-person-id">
+          <input type="hidden" name="address_id" id="remove-address-id">
           <button id="remove-person" name="removeId" type="submit" class="btn btn-danger remove-person-btn">Delete Contact</button>
         </form>
       </div> <!-- modal-footer -->
