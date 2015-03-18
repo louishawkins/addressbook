@@ -2,6 +2,36 @@
 
 include 'includes/config.inc.php';
 
+abstract class Contact {
+
+	function sanitize() {
+
+	}
+
+	function validate(){
+
+	}
+}
+
+class Person {
+
+	protected $new_person = array();
+	// first_name, last_name, ph_num, image
+	protected $dbc;
+
+	function __construct($person_input, $dbc){
+		$this->dbc = $dbc;
+		$this->sanitize
+	}
+
+
+
+	private function insert() {
+
+	}
+
+}
+
 function uploadImage() {
 	$target_dir = './img/';
 	$target_file = $target_dir . basename($_FILES["uploadimg"]["name"]);
@@ -141,10 +171,10 @@ if(!empty($_POST) && isset($_POST['update-person-id'])) {
 }
 
 // Check for stuff to remove
-if(isset($_GET['removeId'])){
-	$remove_ids_array = explode(",", $_GET['removeId']);
-	$remove_p_id = $remove_ids_array[0];
-	$remove_add_id = $remove_ids_array[1];
+if(isset($_POST['removeId'])){
+	$remove_ids_array = explode(",", $_POST['removeId']);
+	$remove_p_id = $_POST['person_id'];
+	$remove_add_id = $_POST['address_id'];
 	
     $delete = "DELETE FROM people WHERE p_id = :p_id";
     $stmt = $dbc->prepare($delete);
